@@ -1,0 +1,16 @@
+// Project-level build.gradle
+buildscript {
+    ext {
+        compose_ui_version = '1.4.3' // Ensure compatibility with Kotlin 1.8.10
+    }
+    repositories {
+        google() // Google's repository for Android components
+        mavenCentral() // Maven repository for various Java libraries
+    }
+    dependencies {
+        // Kotlin Gradle Plugin with version 1.8.10
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.10"
+        classpath "com.android.tools.build:gradle:8.1.4" // Android Gradle Plugin
+    }
+}
+
